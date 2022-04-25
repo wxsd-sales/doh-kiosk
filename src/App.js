@@ -8,13 +8,15 @@ import { useEffect, useState } from 'react';
 import { Button, Avatar, Typography } from '@mui/material';
 import Konnect from './assests/Konnect.png';
 import Kafe from './assests/Kafe.png';
-import TV from './assests/TV.png';
-import Clinician from './assests/Clinician.png';
+import TV_IMG from './assests/TV.png';
+import Staff from './assests/staff.png';
 import Modal from './Modal';
-import KaleidaKonnect from './KaleidaKoonect';
+import Connect from './connect';
 import PresenceDemo from './PresenceDemo';
-import kaleida from './assests/kaleida-home-page.png';
-import KaleidaTV from './KaleidaTV';
+import DOH from './assests/doh-home-page.jpeg';
+import logo from './assests/doh-home-page.png';
+import building from './assests/building.png';
+import TV from './TV';
 import { client_id, client_secret, auth_url, server_url, redirect_uri } from './PresenceDemo/constants';
 
 
@@ -26,9 +28,8 @@ function Buttons() {
   const [showTV, setShowTV] = useState(false);
   const [open, setOpen] = useState(false);
   const handleClose = () => {setOpen(false); setShowTV(false);};
-  const kafeContent = <Iframe  src="https://orderlina.menu/marcelas" style="border:0px #FFFFFF none" name="Menu" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="100%" allowfullscreen scrolling="auto"/>
-  const tvContent = <KaleidaTV />
-  const konnectContent = <KaleidaKonnect />
+  const tvContent = <TV />
+  const konnectContent = <Connect />
 
   return <>
       <div className='bottom'>
@@ -38,30 +39,20 @@ function Buttons() {
               size="large"
               onClick={()=> {setModalContent(konnectContent); setOpen(true);}} 
               startIcon={<Avatar 
-                sx={{ height: '7rem', width: '7rem' }}
+                sx={{ height: '5rem', width: '5rem' }}
                 src={Konnect} />}
             />
-            <Typography>Kaleida Konnect</Typography>
-          </div>
-          <div className="button">
-            <Button
-            size="large"
-            onClick={()=>{setModalContent(kafeContent); setOpen(true);}} 
-            startIcon={<Avatar 
-              sx={{ height: '7rem', width: '7rem' }}
-              src={Kafe} />}
-            />
-            <Typography>Kaleida Kafe</Typography>
+            <Typography>Parent Connect</Typography>
           </div>
           <div className="button">
             <Button
               size="large"
               onClick={()=> {setModalContent(tvContent); setOpen(true); setShowTV(true)}} 
               startIcon={<Avatar 
-                sx={{ height: '7rem', width: '7rem' }}
-                src={TV} />}
+                sx={{ height: '5rem', width: '5rem' }}
+                src={TV_IMG} />}
             />
-            <Typography>Kaleida TV</Typography>
+            <Typography>DOH - TV</Typography>
           </div>
         </div>
         <Modal open={open} close={handleClose} width={showTV ? "40rem" : undefined}>
@@ -74,10 +65,10 @@ function Buttons() {
           size="large"
           className="clinicianButton"
           startIcon={<Avatar 
-            sx={{ height: '4rem', width: '4rem' }}
-            src={Clinician} />}
+            sx={{ height: '5rem', width: '5rem', 'object-fit':'contained' }}
+            src={Staff} />}
         />
-        <Typography>Clinician Only</Typography>
+        <Typography>Staff Only</Typography>
       </div>
   </>
 };
@@ -137,7 +128,10 @@ class App extends Component {
 
     const app = this.state.displayAuthPrompt ? authSuccessful :
       <>
-        <img src={kaleida} alt="kaleida"/>
+        <div className="images">
+          <img src={logo} alt="doh" className="logo"/>
+          <img src={building} alt="building" className="building"/>
+        </div>
         <Buttons /> 
       </>;
 

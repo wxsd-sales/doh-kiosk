@@ -1,6 +1,6 @@
 {
-  "name": "kaleida",
-  "homepage": "https://wxsd-sales.github.io/Kaleida",
+  "name": "DOH-Kiosk",
+  "homepage": "https://wxsd-sales.github.io/doh-kiosk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

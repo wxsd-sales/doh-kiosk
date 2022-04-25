@@ -8,6 +8,25 @@
   width: 100%;
 }
 
+img {
+  object-fit: none;
+}
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 2.5rem;
+  left: 17rem;
+}
+
+.building {
+  width: 95rem;
+
+}
+
 .invalidSipModal {
   display: flex;
   flex-direction: column;
@@ -32,6 +51,8 @@
 }
 .buttons {
   display: flex;
+  justify-content: space-around;
+  width: 30rem;
 }
 
 .button p {
@@ -48,9 +69,6 @@
   position: absolute;
 }
 
-img {
-  width: 100%;
-}
 
 .MuiBox-root {
   padding: 0 !important;
