@@ -68,7 +68,7 @@ function Buttons() {
             sx={{ height: '5rem', width: '5rem', 'object-fit':'contained' }}
             src={Staff} />}
         />
-        <Typography>Staff Only</Typography>
+        <Typography>DOH Contacts</Typography>
       </div>
   </>
 };
