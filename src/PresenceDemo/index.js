@@ -99,7 +99,7 @@ export default class PresenceDemo extends Component {
       }
     });
 
-    this.iframeRef.current.contentWindow.postMessage({type: 'sign-out'}, "https://wxsd-sales.github.io/PresenceOnDevice");
+    this.iframeRef.current.contentWindow.postMessage({type: 'sign-out'}, "https://wxsd-sales.github.io/presence-on-device");
 
   }
   

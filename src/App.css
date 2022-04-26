@@ -53,6 +53,7 @@ img {
   display: flex;
   justify-content: space-around;
   width: 30rem;
+  margin-bottom: 1rem;
 }
 
 .button p {
