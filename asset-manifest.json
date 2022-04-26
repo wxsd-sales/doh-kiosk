@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/doh-kiosk/static/css/main.d1904338.css",
+    "main.css": "/doh-kiosk/static/css/main.1c65b80f.css",
     "main.js": "/doh-kiosk/static/js/main.adaca99b.js",
     "reactPlayerYouTube.js": "/doh-kiosk/static/js/reactPlayerYouTube.4fde5063.chunk.js",
     "reactPlayerSoundCloud.js": "/doh-kiosk/static/js/reactPlayerSoundCloud.87f19cea.chunk.js",
@@ -55,7 +55,7 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/doh-kiosk/static/media/roboto-greek-ext-300-normal.04e05839d6a35e046c13.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/doh-kiosk/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/doh-kiosk/index.html",
-    "main.d1904338.css.map": "/doh-kiosk/static/css/main.d1904338.css.map",
+    "main.1c65b80f.css.map": "/doh-kiosk/static/css/main.1c65b80f.css.map",
     "main.adaca99b.js.map": "/doh-kiosk/static/js/main.adaca99b.js.map",
     "reactPlayerYouTube.4fde5063.chunk.js.map": "/doh-kiosk/static/js/reactPlayerYouTube.4fde5063.chunk.js.map",
     "reactPlayerSoundCloud.87f19cea.chunk.js.map": "/doh-kiosk/static/js/reactPlayerSoundCloud.87f19cea.chunk.js.map",
@@ -72,7 +72,7 @@
     "reactPlayerPreview.d8f15c18.chunk.js.map": "/doh-kiosk/static/js/reactPlayerPreview.d8f15c18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1904338.css",
+    "static/css/main.1c65b80f.css",
     "static/js/main.adaca99b.js"
   ]
 }
